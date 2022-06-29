@@ -1,0 +1,310 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.main_container {
+    width: 1216px;
+    margin: 0px auto;
+
+}
+
+.border {
+    border: 1px solid black;
+}
+.sign_button a{
+    border-radius: 25px;
+}
+
+.block {
+    display: block;
+}
+
+.arrow_forward i {
+    color: #F56E28;
+    font-size: 40px;
+}
+
+/* common style end */
+
+/* header part start */
+header {
+    height: 100px;
+}
+
+nav {
+    padding: 10px;
+    line-height: 10px;
+    height: 95px;
+    box-shadow: none;
+}
+
+.logo img {
+    width: 211px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.flex_align_items {
+    align-items: center;
+}
+
+.serchicon {
+    margin-top: -25px;
+}
+
+.sign_button {
+    margin-top: -10px;
+}
+
+/* banner part start */
+.banner {
+    position: relative;
+}
+
+.banner_item {
+    background-image: url(/images/bannerslider.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 480px;
+}
+
+.inner_left_item {
+    margin-top: 96px;
+}
+
+.inner_left_item h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.inner_left_item .sub_title,
+.offering_section .sub_title,
+.calculators_section .sub_title ,.moreofferssection .sub_title,.mobileapp .sub_title ,.Insights .sub_title{
+    font-style: light;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 60px;
+    /* text-transform: uppercase; */
+    font-family: 'Roboto';
+}
+
+.carousel .indicators {
+    text-align: left;
+    left: 200px;
+
+}
+
+.explore_btn {
+    width: 210px;
+    height: 56px;
+    box-shadow: 0px 4px 12px rgba(56, 56, 56, 0.2);
+    border-radius: 80px;
+    margin-top: 20px;
+}
+
+.inner_right_item {
+    position: absolute;
+    right: 10px;
+
+}
+
+.inner_right_item div a {
+    margin-bottom: 10px;
+}
+
+/* offering_section start */
+.offering_section {
+    height: 680px;
+    background-color: #F9FBFF;
+    position: relative;
+    top: 0;
+
+}
+
+.offering_section_title {
+    padding-top: 76px;
+}
+
+.offering_carousel {
+    padding: 10px;
+}
+
+.Offerings-item {
+    margin-top: 30px;
+    height: 320px;
+    padding: 20px;
+    width: 280px;
+}
+
+.Offerings-item img {
+    margin-top: 4px;
+    margin-top: -25px;
+}
+
+.orange_title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.middle_card_title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+{
+    background-color: blue;
+} */
+.offering_section .owl-theme .owl-nav , .moreofferssection .owl-theme .owl-nav{
+    background: #F56E28;
+    box-shadow: 0px 4px 30px rgba(117, 116, 181, 0.2);
+    border-radius: 27px;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    color: #F9FBFF;
+    margin: 30px auto 0px auto;
+    /* position: absolute;
+    top: 50px; */
+    
+}
+
+.offering_section .owl-theme .owl-dots .owl-dot , .moreofferssection .owl-theme .owl-dots {
+    display: none;
+}
+
+.divider {
+    margin-top: -40px;
+}
+
+/* Calculators  start */
+.calculators_section{
+    position: relative;
+    height: 600px;
+    margin-top: -25px;
+}
+.blue_calculatorpart{
+    background-color:#173F95 ;
+    height: 400px;
+    padding-top: 20px;
+}
+.white_blue_calculatorpart{
+    background-color: #F9FBFF;
+    height: 160px;  
+}
+.homeloan_btn{
+    width: 280px;
+    height: 56px;
+    border-radius: 30px;
+    padding:10px 4px;
+    margin-top: -20px;
+}
+.homeloan_btn i,span{
+    margin-left: 10px;
+}
+.middle_section{
+    position: absolute;
+    top:180px;
+    left:200px;
+}
+.tabsection{
+    margin-top: 30px;
+    height: 290px;
+}
+.tabs li a{
+    color: black;
+}
+.loanrange{
+    width: 600px;
+    margin: 50px auto;
+}
+.loanrange form ul{
+ padding-left: 20px;
+}
+.loanamount{
+  margin-left: 100px;
+}
+
+/* happycustomer */
+.happycustomer{
+    position: relative;
+    margin-top: 50px;
+}
+.happycustomer ,.happycustomer_carousel{
+    height: 700px;
+    background-color: #F9FBFF;
+}
+.happycustomer_carousel .happycustomer_item{
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.customer_img img{
+    width: 119px;
+    height: 119px;
+    margin: 20px auto;
+}
+.customer_info{
+  margin-top: 20px;  
+  font-size: 15px;
+  line-height: 25px;
+  padding: 30px;
+}
+.customer_name{
+    font-size: 20px;
+}
+.customer_edu{
+    font-size: 14px;
+}
+.slider_number{
+    font-size: 24px;
+}
+
+
+/* IIFL Loans Mobile App  start */
+
+/* .mobileappgirl{
+    background-color: red;
+} */
+.mobileapp{
+    height: 600px;
+    position: relative;
+}
+.mobile_inner .mobile_accout_link li{
+    margin-top: 20px;
+}
+.mobile_img{
+    position: absolute;
+    left: 600px;
+    z-index: 1;
+    top:0;
+}
+footer{
+    margin-top: 100px;
+    height: 400px;
+    padding: 20px;
+    background-color: #2D363D;
+}
+.left_footer{
+    justify-content: space-between;
+}
+.top_footer_link ul li{
+    margin-left: 10px;
+}
+.right_footer ul li i{
+    margin-left: 10px;
+}
