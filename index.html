@@ -27,10 +27,13 @@
 <body>
     <header>
         <div class="main_container">
-            <nav class="row white">
+            <nav class="row white navbar">
                 <div class="col s3"> <a href="" class="logo"><img src="./images/Logo Hr.png" alt=""></a></div>
+                <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+                    <i class="material-icons black-text">menu</i>
+                </a>
                 <div class="col s9">
-                    <div class="section right">
+                    <div class="section right hide-on-med-and-down top_navbar">
                         <ul class="right-align">
                             <li><a href="" class="black-text text-darken-2">Our Businesses</a></li>
                             <li><a href="" class="black-text text-darken-2">About Us</a></li>
@@ -39,7 +42,7 @@
                         </ul>
 
                     </div>
-                    <div class="section left">
+                    <div class="section left hide-on-med-and-down bottom_navbar">
                         <ul class="left-align">
                             <li><a href="" class="black-text text-darken-2">Personal Loan</a></li>
                             <li><a href="" class="black-text text-darken-2">Gold Loan</a></li>
@@ -54,15 +57,18 @@
                     </div>
                 </div>
             </nav>
+            <ul class="sidenav" id="mobile-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </header>
     <main>
         <!-- banner carousel section start -->
         <section class="banner">
-            <!-- <div class="carousel-fixed-item ">
-                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-                    <img src="./images/bannerslider.jpg" alt="">
-                </div> -->
             <div class="carousel carousel-slider  banner_item">
                 <div class="carousel-item white-text" href="#one!">
                     <div id="index-banner" class="parallax-container">
@@ -193,15 +199,16 @@
                     </div>
                 </div>
             </div>
-
         </section>
+
+
         <!-- banner carousel section end -->
         <!-- Our Offerings section start -->
         <section class="offering_section">
             <div class="main_container">
                 <span class="sub_title block offering_section_title">Our <b>Offerings</b></span>
-                <div class="owl-carousel owl-theme  offering_carousel">
-                    <div class="item Offerings-item white z-depth-3">
+                <div class="owl-carousel owl-theme  offering_carousel ">
+                    <div class="item Offerings-item white z-depth-3 ">
                         <span class="orange-text darken-4 orange_title">Build your dreams</span>
                         <p class="middle_card_title ">Home Loans
                             <span class="block"> Upto 85% </span>
@@ -210,7 +217,7 @@
 
                         <img src="./images/home.png" alt="">
                     </div>
-                    <div class="item Offerings-item  white z-depth-3">
+                    <div class="item Offerings-item  white z-depth-3 ">
                         <span class="orange-text darken-4 orange_title">Build your dreams</span>
                         <p class="middle_card_title ">₹50 lakhs Credit
                             <span class="block"> facility</span>
@@ -219,7 +226,7 @@
 
                         <img src="./images/bag.png" alt="">
                     </div>
-                    <div class="item Offerings-item white z-depth-3">
+                    <div class="item Offerings-item white z-depth-3 ">
                         <span class="orange-text darken-4 orange_title">Build your dreams</span>
                         <p class="middle_card_title ">Home Loans
                             <span class="block"> Upto 85% </span>
@@ -228,7 +235,7 @@
 
                         <img src="./images/home.png" alt="">
                     </div>
-                    <div class="item Offerings-item white z-depth-3">
+                    <div class="item Offerings-item white z-depth-3 ">
                         <span class="orange-text darken-4 orange_title">Build your dreams</span>
                         <p class="middle_card_title">Home Loans
                             <span class="block"> Upto 85% </span>
@@ -237,7 +244,7 @@
 
                         <img src="./images/money.png" alt="">
                     </div>
-                    <div class="item Offerings-item white z-depth-3">
+                    <div class="item Offerings-item white z-depth-3 ">
                         <span class="orange-text darken-4 orange_title">Build your dreams</span>
                         <p class="middle_card_title">Home Loans
                             <span class="block"> Upto 85% </span>
@@ -348,61 +355,74 @@
         <!-- Calculators section end-->
         <!-- moreoffers section start -->
         <section class=" moreofferssection red lighten-5">
-            <div class="main_container">
-                <span class="sub_title block offering_section_title">More<b> Offers</b></span>
-                <div class="owl-carousel owl-theme  offering_carousel">
-                    <div class="item Offerings-item white z-depth-3">
-                        <span class="orange-text darken-4 orange_title">Build your dreams</span>
-                        <p class="middle_card_title ">Processing
-
-                            <span class="block">Charges</span>
+            <div class="main_container ">
+                <span class="sub_title block moreoffers_section_title">More<b> Offers</b></span>
+                <div class="owl-carousel owl-theme  moreoffer_carousel">
+                    <div class="item moreoffer-item white z-depth-3">
+                        <h5 class="orange-text darken-4 orange_title">Build your dreams</h5>
+                        <ul class="flex  card_more_title  ">
+                            <li class="number">0</li>
+                            <li class="number_info ">Processing<span class="block">Charges</span></li>
+                        </ul>
+                        <span class="card_info_nore">Offer till December 2019</span>
+                        <p>Apply for personal loan <br>through our mobile app
                             <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
                         </p>
-
                         <img src="./images/gold.png" alt="">
                     </div>
-                    <div class="item Offerings-item  white z-depth-3">
-                        <span class="orange-text darken-4 orange_title">Build your dreams</span>
-                        <p class="middle_card_title ">₹50 lakhs Credit
-                            <span class="block"> facility</span>
+
+                    <div class="item moreoffer-item white z-depth-3">
+                        <h5 class="orange-text darken-4 orange_title">Build your dreams</h5>
+                        <ul class="flex  card_more_title  ">
+                            <li class="number">0</li>
+                            <li class="number_info ">Processing<span class="block">Charges</span></li>
+                        </ul>
+                        <span class="card_info_nore">Offer till December 2019</span>
+                        <p>Apply for personal loan <br>through our mobile app
                             <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
                         </p>
-
                         <img src="./images/car.png" alt="">
                     </div>
-                    <div class="item Offerings-item white z-depth-3">
-                        <span class="orange-text darken-4 orange_title">Build your dreams</span>
-                        <p class="middle_card_title ">Home Loans
-                            <span class="block"> Upto 85% </span>
-
+                    <div class="item moreoffer-item white z-depth-3">
+                        <h5 class="orange-text darken-4 orange_title">Build your dreams</h5>
+                        <ul class="flex  card_more_title ">
+                            <li class="number">0</li>
+                            <li class="number_info ">Processing<span class="block">Charges</span></li>
+                        </ul>
+                        <span class="card_info_nore">Offer till December 2019</span>
+                        <p>Apply for personal loan <br>through our mobile app
                             <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
                         </p>
-
-                        <img src="./images/home.png" alt="">
-                    </div>
-                    <div class="item Offerings-item white z-depth-3">
-                        <span class="orange-text darken-4 orange_title">Build your dreams</span>
-                        <p class="middle_card_title">Home Loans
-                            <span class="block"> Upto 85% </span>
-                            <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
-                        </p>
-
-                        <img src="./images/money.png" alt="">
-                    </div>
-                    <div class="item Offerings-item white z-depth-3">
-                        <span class="orange-text darken-4 orange_title">Build your dreams</span>
-                        <p class="middle_card_title">Home Loans
-                            <span class="block"> Upto 85% </span>
-                            <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
-                        </p>
-
                         <img src="./images/bag.png" alt="">
                     </div>
-
+                    <div class="item moreoffer-item white z-depth-3">
+                        <h5 class="orange-text darken-4 orange_title">Build your dreams</h5>
+                        <ul class="flex  card_more_title ">
+                            <li class="number">0</li>
+                            <li class="number_info ">Processing<span class="block">Charges</span></li>
+                        </ul>
+                        <span class="card_info_nore">Offer till December 2019</span>
+                        <p>Apply for personal loan <br>through our mobile app
+                            <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
+                        </p>
+                        <img src="./images/gold.png" alt="">
+                    </div>
+                    <div class="item moreoffer-item white z-depth-3">
+                        <h5 class="orange-text darken-4 orange_title">Build your dreams</h5>
+                        <ul class="flex  card_more_title ">
+                            <li class="number">0</li>
+                            <li class="number_info ">Processing<span class="block">Charges</span></li>
+                        </ul>
+                        <span class="card_info_nore">Offer till December 2019</span>
+                        <p>Apply for personal loan <br>through our mobile app
+                            <a href="" class="arrow_forward"><i class="material-icons">trending_flat</i></a>
+                        </p>
+                        <img src="./images/gold.png" alt="">
+                    </div>
                 </div>
 
             </div>
-            <div class="divider"></div>
+            <div class="divider moreofferssection_divider "></div>
         </section>
         <!-- moreoffers section start -->
         <section class="happycustomer">
@@ -474,6 +494,88 @@
 
             <!-- IIFL Loans Mobile App -->
         </section>
+        <!-- IIFL Insights  -->
+        <section class="Insights">
+            <div class="main_container ">
+                <span class="sub_title block moreoffers_section_title center">IIFL <b>Insightse</b></span>
+                <div class=" Insights_cards flex">
+                    <div class=" Insights_card z-depth-4">
+                        <div class="Insights_card_img"><img src="./images/boywithmom.png" alt=""></div>
+                        <div class="Insights_card_info">
+                            <h5 class="orange-text darken-4 orange_title">Article</h5>
+                            <h4>5 Good Reasons to Get a <br> Personal Loan</h4>
+                            <p>There are plenty of people out<br> there sharing their tales...</p>
+                            <ul class="flex">
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                            </ul>
+                            <ul class="flex">
+                                <li><a href="" class="grey-text"> <i class="material-icons grey-text">visibility</i></a>
+                                </li>
+                                <li><a href="" class="grey-text">1200 | 2 min read</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" Insights_card z-depth-4 ">
+                        <div class="Insights_card_img"><img src="./images/boywithmom.png" alt=""></div>
+                        <div class="Insights_card_info">
+                            <h5 class="orange-text darken-4 orange_title">Article</h5>
+                            <h4>5 Good Reasons to Get a <br> Personal Loan</h4>
+                            <p>There are plenty of people out<br> there sharing their tales...</p>
+                            <ul class="flex">
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                            </ul>
+                            <ul class="flex">
+                                <li><a href="" class="grey-text"> <i class="material-icons grey-text">visibility</i></a>
+                                </li>
+                                <li><a href="" class="grey-text">1200 | 2 min read</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" Insights_card z-depth-4 ">
+                        <div class="Insights_card_img"><img src="./images/boywithmom.png" alt=""></div>
+                        <div class="Insights_card_info">
+                            <h5 class="orange-text darken-4 orange_title">Article</h5>
+                            <h4>5 Good Reasons to Get a <br> Personal Loan</h4>
+                            <p>There are plenty of people out<br> there sharing their tales...</p>
+                            <ul class="flex">
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                            </ul>
+                            <ul class="flex">
+                                <li><a href="" class="grey-text"> <i class="material-icons grey-text">visibility</i></a>
+                                </li>
+                                <li><a href="" class="grey-text">1200 | 2 min read</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" Insights_card z-depth-4 ">
+                        <div class="Insights_card_img"><img src="./images/boywithmom.png" alt=""></div>
+                        <div class="Insights_card_info">
+                            <h5 class="orange-text darken-4 orange_title">Article</h5>
+                            <h4>5 Good Reasons to Get a <br> Personal Loan</h4>
+                            <p>There are plenty of people out<br> there sharing their tales...</p>
+                            <ul class="flex">
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                                <li><a href="" class="amber-text">#Finance</a></li>
+                            </ul>
+                            <ul class="flex">
+                                <li><a href="" class="grey-text"> <i class="material-icons grey-text">visibility</i></a>
+                                </li>
+                                <li><a href="" class="grey-text">1200 | 2 min read</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="seeall_btn_div">
+                    <button class="btn  seeall_btn  black-text" type="submit" name="action">see all insights</button>
+                </div>
+            </div>
+        </section>
+
+
+
 
         <!-- IIFL Loans Mobile App  start-->
         <section class="mobileapp white-text">
@@ -504,95 +606,109 @@
                 <img src="./images/mobile.png" alt="">
             </div>
         </section>
-        <footer class=" white-text">
+    </main>
+    <footer class=" white-text">
+        <div class="top_footer_link">
             <div class="main_container">
-                <div class="top_footer_link">              
-                    <ul class="flex">
-                        <li><a href="" class=" grey-text">Personal Loan   | </a></li>
-                        <li><a href="" class=" grey-text">Home Loan   | </a></li>
-                        <li><a href="" class=" grey-text"> Business Loan   |</a></li>
-                        <li><a href="" class=" grey-text"> Fixed Deposit   |  </a></li>
-                        <li><a href="" class=" grey-text"> Doctor Loan   |  </a></li>
-                        <li><a href="" class=" grey-text">Engineer Loan   |</a></li>
-                        <li><a href="" class=" grey-text">Chartered Accountant   |</a></li>
-                        <li><a href="" class=" grey-text">LoanCredit   |</a></li>
-                        <li><a href="" class=" grey-text"> Card grey</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <div class="col s8">
-                        <div class="flex left_footer">
-                            <ul>
-                                <li><a href="" class="white-text">EasY Access</a></li>
-                                <li><a href="" class="grey-text">Sign in</a></li>
-                                <li><a href="" class="grey-text">Calculators</a></li>
-                                <li><a href="" class="grey-text">About Us</a></li>
-                                <li><a href="" class="grey-text">CSR</a></li>
-                                <li><a href="" class="grey-text">Careers</a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                                <li><a href="" class="grey-text">Investors </a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="white-text">Securities </a></li>
-                                <li><a href="" class="grey-text">Mutual Funds</a></li>
-                                <li><a href="" class="grey-text">Equity</a></li>
-                                <li><a href="" class="grey-text">Demat Account</a></li>
-                                <li><a href="" class="grey-text">Demat Account</a></li>
-                                <li><a href="" class="grey-text">Careers</a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                                <li><a href="" class="grey-text">Investors </a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                                <li><a href="" class="grey-text">Investors </a></li>
-                                <li><a href="" class="grey-text">Careers</a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="white-text">Finance </a></li>
-                                <li><a href="" class="grey-text">Sign in</a></li>
-                                <li><a href="" class="grey-text">Calculators</a></li>
-                                <li><a href="" class="grey-text">About Us</a></li>
-                                <li><a href="" class="grey-text">CSR</a></li>
-                                <li><a href="" class="grey-text">Careers</a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                                <li><a href="" class="grey-text">Investors </a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="white-text">Wealth</a></li>
-                                <li><a href="" class="grey-text">Sign in</a></li>
-                                <li><a href="" class="grey-text">Calculators</a></li>
-                                <li><a href="" class="grey-text">About Us</a></li>
-                                <li><a href="" class="grey-text">CSR</a></li>
-                                <li><a href="" class="grey-text">Careers</a></li>
-                                <li><a href="" class="grey-text">Blogs </a></li>
-                                <li><a href="" class="grey-text">Investors </a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="" class="white-text" >Need Help?</a></li>
-                                <li><a href="" class="grey-text" >Sign in</a></li>
-                                <li><a href="" class="grey-text" >Calculators</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col s4 right_footer">
+                <ul class="flex">
+                    <li><a href="" class=" white-text">Quick Links > </a></li>
+                    <li><a href="" class=" grey-text">Personal Loan | </a></li>
+                    <li><a href="" class=" grey-text">Home Loan | </a></li>
+                    <li><a href="" class=" grey-text"> Business Loan |</a></li>
+                    <li><a href="" class=" grey-text"> Fixed Deposit | </a></li>
+                    <li><a href="" class=" grey-text"> Doctor Loan | </a></li>
+                    <li><a href="" class=" grey-text">Engineer Loan |</a></li>
+                    <li><a href="" class=" grey-text">Chartered Accountant |</a></li>
+                    <li><a href="" class=" grey-text">LoanCredit |</a></li>
+                    <li><a href="" class=" grey-text"> Card Loan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row inner_footer">
+            <div class="main_container ">
+                <div class="col s8 ">
+                    <div class="flex left_footer">
                         <ul>
-                            <li><a href=""  class="white-text">Newsletter</a></li>
-                            <li><p class="grey-text">  Subscribe our newsletter
-                                for latest updates</p></li>
-                            <li><a href="" class="grey-text">Connect with us</a></li>
-                            <li>
-                                <a href=""><i class="fa-brands fa-facebook grey-text"></i><i class="fa-brands fa-instagram grey-text"></i></a>
-                            </li>
+                            <li><a href="" class="white-text">EasY Access</a></li>
+                            <li><a href="" class="grey-text">Sign in</a></li>
+                            <li><a href="" class="grey-text">Calculators</a></li>
+                            <li><a href="" class="grey-text">About Us</a></li>
+                            <li><a href="" class="grey-text">CSR</a></li>
+                            <li><a href="" class="grey-text">Careers</a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                            <li><a href="" class="grey-text">Investors </a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" class="white-text">Securities </a></li>
+                            <li><a href="" class="grey-text">Mutual Funds</a></li>
+                            <li><a href="" class="grey-text">Equity</a></li>
+                            <li><a href="" class="grey-text">Demat Account</a></li>
+                            <li><a href="" class="grey-text">Demat Account</a></li>
+                            <li><a href="" class="grey-text">Careers</a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                            <li><a href="" class="grey-text">Investors </a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                            <li><a href="" class="grey-text">Investors </a></li>
+                            <li><a href="" class="grey-text">Careers</a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" class="white-text">Finance </a></li>
+                            <li><a href="" class="grey-text">Sign in</a></li>
+                            <li><a href="" class="grey-text">Calculators</a></li>
+                            <li><a href="" class="grey-text">About Us</a></li>
+                            <li><a href="" class="grey-text">CSR</a></li>
+                            <li><a href="" class="grey-text">Careers</a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                            <li><a href="" class="grey-text">Investors </a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" class="white-text">Wealth</a></li>
+                            <li><a href="" class="grey-text">Sign in</a></li>
+                            <li><a href="" class="grey-text">Calculators</a></li>
+                            <li><a href="" class="grey-text">About Us</a></li>
+                            <li><a href="" class="grey-text">CSR</a></li>
+                            <li><a href="" class="grey-text">Careers</a></li>
+                            <li><a href="" class="grey-text">Blogs </a></li>
+                            <li><a href="" class="grey-text">Investors </a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="" class="white-text">Need Help?</a></li>
+                            <li><a href="" class="grey-text">Sign in</a></li>
+                            <li><a href="" class="grey-text">Calculators</a></li>
+
                         </ul>
                     </div>
-
                 </div>
+                <div class="col s4 right_footer">
+                    <ul>
+                        <li><a href="" class="white-text">Newsletter</a></li>
+                        <li>
+                            <p class="grey-text footer_right_info"> Subscribe our newsletter<br>
+                                for latest updates</p>
+                        </li>
+                        <li>
+                             <button class="btn  email_here_btn  black-text" type="submit" name="action">
+                                Enter your email here <i class="fa-solid fa-arrow-right orange-text"></i></button>
+
+                        </li>
+                        <li><a href="" class="grey-text connect_us">Connect with us</a></li>
+                        <li>
+                            <a href="" class="grey-text">
+                                <i class="fa-brands fa-facebook grey-text"></i>
+                                <i class="fa-brands fa-instagram grey-text"></i>
+                                <i class="fa-brands fa-twitter grey-text"></i>
+                                <i class="fa-brands fa-linkedin grey-text"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-        </footer>
-
-    </main>
-
-
+        </div>
+    </footer>
+    </div>
+    </div>
 
 
 
@@ -626,14 +742,18 @@
 
         var instance = M.Carousel.init({
             fullWidth: true,
-            indicators: true
+            indicators: true,
+            height: 800
+
         });
 
         // Or with jQuery
 
         $('.carousel.carousel-slider').carousel({
             fullWidth: true,
-            indicators: true
+            indicators: true,
+            full_width: false
+
         });
 
 
@@ -653,7 +773,25 @@
 
 
         // owlcorosal Our Offerings
-        $('.owl-carousel').owlCarousel({
+        $('.offering_carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+        // owlcorosal Our Offerings
+        $('.moreoffer_carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -681,6 +819,15 @@
 
         $(document).ready(function () {
             $('.carousel').carousel();
+        });
+
+
+
+
+
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
         });
     </script>
 
